@@ -7,6 +7,6 @@ const Login = () => {
       <Text>Login Page</Text>
     </View>
   );
-}
+};
 
 export default Login;
