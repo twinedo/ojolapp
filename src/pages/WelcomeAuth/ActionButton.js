@@ -3,11 +3,11 @@ import {View, Text} from 'react-native';
 import {colors} from '../../utils';
 import {Button} from '../../components';
 
-const ActionButton = ({desc, title}) => {
+const ActionButton = ({desc, title, onPress}) => {
   return (
     <View style={styles.wrapper.component}>
       <Text style={styles.text.desc}>{desc}</Text>
-      <Button title={title} />
+      <Button title={title} onPress={onPress} />
     </View>
   );
 };
@@ -18,10 +18,10 @@ const styles = {
   },
   text: {
     desc: {
-      fontSize: 10,
+      fontSize: 14,
       color: colors.text.default,
       textAlign: 'center',
-      paddingHorizontal: '15%',
+      paddingHorizontal: '10%',
       marginBottom: 16,
     },
   },
